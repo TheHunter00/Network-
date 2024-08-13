@@ -1,4 +1,5 @@
-What is the OSI Model?
+# What is the OSI Model?
+
 The OSI Model is like a blueprint for how data travels across a network. It helps us understand how different parts of a network communication system work together.
 
 ## The 7 Layers of the OSI Model
