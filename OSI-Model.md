@@ -47,3 +47,7 @@ Example: HTTP (for web browsing) and SMTP (for sending emails).
 - At the receiving end, it goes through the layers in reverse, from the Physical Layer up to the Application Layer, where it’s finally used by the application.
   
 By breaking down the process into these layers, the OSI Model helps network professionals understand and troubleshoot network communication in a structured way
+
+![net_models4](https://github.com/user-attachments/assets/9459a4ca-49a2-49bb-9bc1-5d68dcba5748)
+
+![osi-layers](https://github.com/user-attachments/assets/2393944f-d435-48ee-bbf0-c62b70364b3b)
