@@ -46,6 +46,12 @@ Example: HTTP (for web browsing) and SMTP (for sending emails).
 - Travels over the network hardware (Physical Layer).
 - At the receiving end, it goes through the layers in reverse, from the Physical Layer up to the Application Layer, where it’s finally used by the application.
   
+The layers 2-4 are transport oriented, and the layers 5-7 are application oriented layers. In each layer, precisely defined tasks are performed, and the interfaces to the neighboring layers are precisely described. Each layer offers services for use to the layer directly above it. To make these services available, the layer uses the services of the layer below it and performs the tasks of its layer.
+
+If two systems communicate, all seven layers of the OSI model are run through at least twice, since both the sender and the receiver must take the layer model into account. Therefore, a large number of different tasks must be performed in the individual layers to ensure the communication's security, reliability, and performance.
+
+When an application sends a packet to the other system, the system works the layers shown above from layer 7 down to layer 1, and the receiving system unpacks the received packet from layer 1 up to layer 7.
+
 By breaking down the process into these layers, the OSI Model helps network professionals understand and troubleshoot network communication in a structured way
 
 ![net_models4](https://github.com/user-attachments/assets/9459a4ca-49a2-49bb-9bc1-5d68dcba5748)
