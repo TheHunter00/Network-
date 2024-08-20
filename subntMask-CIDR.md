@@ -1,6 +1,5 @@
-C
 
-##  IP Addressing: Subnet Masks and CIDR
+## IP Addressing: Subnet Masks, CIDR, and Default Gateway
 
 ### **What is a Subnet Mask?**
 
@@ -76,10 +75,35 @@ In this case:
   - **IP Range**: From `192.168.1.0` to `192.168.1.255`
   - **Network Size**: 256 addresses
 
+### **What is a Default Gateway?**
+
+A default gateway is a device (usually a router) that your computer uses to send data to devices outside its own network.
+
+#### **How It Works**
+
+1. **Local Network**: If a device needs to communicate with another device on the same local network, it can do so directly.
+2. **Different Network**: To communicate with devices on different networks (like accessing websites on the Internet), your computer sends the data to the default gateway.
+
+#### **Example**
+
+- **IP Address**: `192.168.1.10`
+- **Subnet Mask**: `255.255.255.0`
+- **Default Gateway**: `192.168.1.1`
+
+In this case:
+- **IP Address**: `192.168.1.10` (Your computer)
+- **Subnet Mask**: `255.255.255.0` (Defines the local network as `192.168.1.x`)
+- **Default Gateway**: `192.168.1.1` (Router that connects to other networks)
+
+#### **Why It’s Useful**
+
+The default gateway allows your computer to send data to devices outside its local network, such as accessing websites, communicating with remote servers, or connecting to other networks.
+
 ### **In Summary**
 
-- **Subnet Mask**: Helps in understanding which part of an IP address is for the network and which is for the device.
-- **CIDR**: Provides a flexible and efficient way to allocate IP addresses, allowing for precise network sizes.
+- **Subnet Mask**: Helps determine which part of an IP address is for the network and which is for the device.
+- **CIDR**: A flexible and efficient way to manage IP addresses and network sizes.
+- **Default Gateway**: The router or device that connects your network to other networks, allowing communication beyond your local network.
 
 ---
 
