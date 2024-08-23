@@ -38,3 +38,45 @@ Routing is essential for maintaining smooth and effective communication within n
 
 
 ![image](https://github.com/user-attachments/assets/c724ad81-eac7-4f79-8f32-1b1921660980)
+
+<hr>
+
+### What is a Routing Table?
+
+A **routing table** is like a map for a router or switch. It helps determine the best path for data to travel from one device to another across a network.
+
+### How a Routing Table Works
+
+1. **Storing Routes**: The routing table contains a list of routes. Each route specifies how to reach different network destinations. It includes:
+   - **Destination Network**: The address of the network or device the data is meant for.
+   - **Next Hop**: The next device (router) to send the data to.
+   - **Metric**: A value that helps decide the best route (e.g., shortest path, lowest cost).
+
+2. **Decision Making**: When a router receives a data packet, it looks up the destination address in the routing table. It then uses the route information to forward the packet to the next hop along the path.
+
+3. **Updating**: Routing tables can be updated manually (static routing) or automatically (dynamic routing). Dynamic routing uses protocols to exchange route information between routers, adapting to changes in the network.
+
+### Example of a Routing Table
+
+Here's a simplified example of what a routing table might look like:
+
+| Destination Network | Next Hop       | Metric |
+|---------------------|-----------------|--------|
+| 192.168.1.0/24      | 192.168.0.1     | 10     |
+| 10.0.0.0/8          | 192.168.0.2     | 20     |
+| 172.16.0.0/12       | 192.168.0.3     | 15     |
+
+- **Destination Network**: The network address that the router wants to reach.
+- **Next Hop**: The IP address of the next router on the path to the destination.
+- **Metric**: A value that helps the router choose the best route if multiple routes are available.
+
+### Importance of Routing Tables
+
+- **Efficient Routing**: Ensures data packets take the best path to their destination.
+- **Network Management**: Helps in managing and troubleshooting network paths.
+- **Dynamic Updates**: Adapts to network changes automatically for smooth operation.
+
+In essence, a routing table helps routers make decisions about where to send data to get it to the right place efficiently.
+
+`Write on cmd : route print`
+![image](https://github.com/user-attachments/assets/3747bdef-f7c5-4801-9c04-cbbf3a309765)
