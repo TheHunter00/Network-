@@ -63,7 +63,7 @@ Ports direct network traffic to the right application or service. They are categ
   - **Dynamic/Private Ports**: 49152 - 65535 (e.g., temporary connections)
 
 ![image](https://github.com/user-attachments/assets/64e17611-d13c-45d1-b0b9-365a188fba93)
-
+![image](https://github.com/user-attachments/assets/fc1438a0-5203-4f7b-9ce2-380173e37d39)
 <hr>
 
 # Important Ports
